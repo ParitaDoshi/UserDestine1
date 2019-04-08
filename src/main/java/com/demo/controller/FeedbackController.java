@@ -124,6 +124,14 @@ public class FeedbackController {
 		
 	}
 	
+	@RequestMapping(value = "user/viewFeedbackUser", method = RequestMethod.GET)
+	public ModelAndView viewFeedbackUser(@ModelAttribute FeedbackVO feedbackVO) 
+	{
+		List ls=this.feedbackService.search(feedbackVO);
+		return new ModelAndView("user/viewFeedback","viewdata",ls);
+		
+	}
+	
 	
 	@RequestMapping(value = "admin/deletefeedbackdataadmin", method = RequestMethod.GET)
 	public ModelAndView itemdatadeleteadmin(@ModelAttribute FeedbackVO feedbackVO,	@RequestParam("feedbackid")int feedbackid)

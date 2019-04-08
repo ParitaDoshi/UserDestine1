@@ -67,8 +67,9 @@ public class ComplainController {
 	public ModelAndView complainviewpage(@ModelAttribute ComplainVO complainVO,HttpSession session) 
 	{
 	
-		int loginId=(Integer)session.getAttribute("loginId");
-		LoginVO loginVo=new LoginVO();
+		int loginId = (Integer)session.getAttribute("loginId");
+		
+		LoginVO loginVo = new LoginVO();
 		loginVo.setLoginid(loginId);
 		
 		complainVO.setToId(loginVo);

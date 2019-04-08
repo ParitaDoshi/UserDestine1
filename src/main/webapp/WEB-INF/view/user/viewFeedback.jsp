@@ -62,127 +62,43 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
-					<div class="col-lg-3" style="float: left">
-						<div class="single-sidebar-widget widget-search">
-							<form action="#" class="sidebar-search-form">
-								<input type="text" placeholder="Search here . . . .">
-								<button type="button">
-									<i class="zmdi zmdi-search"></i>
-								</button>
-							</form>
-						</div>
-						<div class="single-sidebar-widget">
-							<h4>Categories</h4>
-							<ul class="widget-list">
-								<li><a href="#"><i class="fa fa-caret-left"></i>
-										Vegetarian</a></li>
-								<li><a href="#"><i class="fa fa-caret-left"></i>Non-Vegetarian
-										</a></li>
-								<li><a href="#"><i class="fa fa-caret-left"></i>Desserts</a></li>
-								<li><a href="#"><i class="fa fa-caret-left"></i>Vegetarian And Non-Vegetrain
-										</a></li>
-								<li><a href="#"><i class="fa fa-caret-left"></i>Drinks</a></li>
-							</ul>
-						</div>
-						<div class="single-sidebar-widget widget-calender">
-							<div data-date="12/03/2012" class="datepicker"></div>
-						</div>
-
-
-					</div>
-					<div class="order-xl-2 order-lg-2 col-lg-9" style="float: left">
-						<div class="blog-image">
-						<c:forEach items="${x}" var="i">
-							<a href="blog.html"> 
+					<div class="blog-comments">
+						<h4>Comments</h4>
 						
-							<img
-								src="${pageContext.request.contextPath}/document/${i.shopProfilePhotoName}"
-								alt="" > <!-- <span class="blog-date">13<span>MAR</span></span> -->
-							</a>
-							
-							</c:forEach>
-							
-						</div>
-						<div class="blog-text-container">
-							<c:forEach items="${x}" var="i">
-								<h4>${i.ownershopname}</h4>
-								<span>5.00 pm - 11.00 pm</span>
-								<br />
-								<p>${i.shopdescription}</p>
-								<div class="blog-meta-info">
-									<span><i class="zmdi zmdi-favorite-outline"></i>( 500 )</span>
-									<span><i class="zmdi zmdi-comments"></i>( 100 )</span> <span><i
-										class="zmdi zmdi-share"></i>( 100 )</span>
-								</div>
-							</c:forEach>
-						</div>
-					</div>
-
-					<div class="menu-area pt-120 pb-120">
-						<div class="container">
-							<div class="section-title text-center">
-								<h2>Our Food Menu</h2>
-								<p>There are many variations of passages of Lorem Ipsum
-									available.</p>
+						<c:forEach items="${viewdata}" var="i">
+						
+						
+						<div class="single-blog-comment">
+							<div class="blog-comment-img">
+								<img src="${pageContext.request.contextPath}/userResources/images/comment/1.jpg"
+									alt="">
 							</div>
-							<div class="row">
-								<div class="col-lg-2 col-md-3">
-									<div class="menu-list">
-										<button class="active" data-filter="*">
-											ALL <i class="zmdi zmdi-caret-right"></i>
-										</button>
-										<button data-filter=".breakfast">breakfast</button>
-										<button data-filter=".lunch">Lunch</button>
-										<button data-filter=".dinner">Dinner</button>
-										<button data-filter=".snacks">snacks</button>
-										<button data-filter=".party">party</button>
+							<div class="blog-comment-text-wrapper">
+								<div class="blog-comment-text">
+									<div class="comment-title">
+										<h4>
+											RESTAURANT : ${i.toId.username} <br><br>
+											USER : ${i.fromId.username} 
+										</h4>
+										<span>${i.feedback}</span>
+									</div>
+									<div class="comment-reply">
+										<span><i class=""></i></span>
+										<span><button type="button">
+												<i class="zmdi zmdi-mail-reply"></i>
+											</button></span>
 									</div>
 								</div>
-								<div class="col-lg-10 col-md-9">
-									<div class="custom-row">
-										<div class="grid">
-											
-											<c:forEach items="${itemList}" var="j">
-<!-- 											<div class="col-lg-6 grid-item breakfast dinner party"> -->
-											<div class="col-lg-6 grid-item ${j.itemfvo.itemtype}">
-												<div class="menu-item">
-													<div class="menu-image">
-														<a href="menu.html"><img
-															src="${pageContext.request.contextPath}/item/${j.itemfvo.itemProfilePhotoName}"
-															alt=""></a>
-													</div>
-													<div class="menu-text">
-														<h4>
-															<a href="menu.html">${j.itemfvo.itemname}</a><span>${j.itemfvo.itemprice}</span>
-														</h4>
-														<span>${j.itemfvo.itemdescription}</span>
-														<span>Offer Price:- ${j.offerFinalPrice}</span>
-													</div>
-												</div>
-											</div>
-											</c:forEach>
-											
-											
-											
-											
-											
-									
-											
-											
-											
-											
-											
-											
-											
-											
-										</div>
-									</div>
-								</div>
+								<p>
+									${i.feedbackmessage}
+								</p>
 							</div>
 						</div>
+						
+						</c:forEach>
+						
 					</div>
-
-										
+					
 				</div>
 			</div>
 		</div>

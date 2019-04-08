@@ -12,10 +12,6 @@ import org.springframework.stereotype.Repository;
 import com.demo.vo.CategoryVO;
 
 
-
-
-
-
 @Repository
 public class CategoryDAO implements CategoryInterface{
 
@@ -35,7 +31,7 @@ public class CategoryDAO implements CategoryInterface{
 		List ls=new ArrayList();
 		 
 		 Session session = this.sessionFactory.getCurrentSession();
-		 Query q=session.createQuery("from CategoryVO");
+		 Query q=session.createQuery("from CategoryVO where category_deletestatus = 'active' ");
 		 ls=q.list();
 		 return ls;
 	}

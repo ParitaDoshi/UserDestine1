@@ -31,7 +31,7 @@ public class SubCategoryDAO implements SubCategoryInterface{
 		List ls=new ArrayList();
 		 
 		 Session session = this.sessionFactory.getCurrentSession();
-		 Query q=session.createQuery("from SubCategoryVO");
+		 Query q=session.createQuery("from SubCategoryVO where subcategorydeletestatus = 'active' ");
 		 ls=q.list();
 		 return ls;
 	}

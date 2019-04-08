@@ -124,6 +124,30 @@ public class LoginController {
 		
 		System.out.println("loginID>>>>>>"+loginId);
 	    session.setAttribute("loginId",loginId);
+	    
+		session.setAttribute("loginId",loginId);
+		System.out.println("loginID>>>>>>"+loginId);
+		List  uls= this.loginService.searchUser();
+		session.setAttribute("userList",uls.size());
+		
+		
+		List rls=this.loginService.searchRestaurant();
+		session.setAttribute("restaurantList",rls.size());
+		
+		List ols=this.loginService.searchOffer();
+		session.setAttribute("offerList",ols.size());
+		
+		List cls=this.loginService.searchComplain();
+		session.setAttribute("complainList",cls.size());
+		
+		List fls=this.loginService.searchFeedback();
+		session.setAttribute("feedbackList",fls.size());
+		
+		
+		List ils=this.loginService.searchItem();
+		session.setAttribute("itemList",ils.size());
+		
+		
 		return new ModelAndView("owner/index");
 		
 	

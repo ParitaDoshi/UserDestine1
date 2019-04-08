@@ -30,7 +30,7 @@ public class ItemDAO implements ItemInterface{
 		List ls=new ArrayList();
 		 
 		 Session session = this.sessionFactory.getCurrentSession();
-		 Query q=session.createQuery("from ItemVO");
+		 Query q=session.createQuery("from ItemVO where itemdeletestatus ='active'");
 		 ls=q.list();
 		 return ls;
 	}

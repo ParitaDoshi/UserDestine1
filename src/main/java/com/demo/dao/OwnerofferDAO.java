@@ -34,7 +34,7 @@ public class OwnerofferDAO implements OwnerofferInterface {
 		List ls=new ArrayList();
 		 
 		 Session session = this.sessionFactory.getCurrentSession();
-		 Query q=session.createQuery("from OwnerofferVO");
+		 Query q=session.createQuery("from OwnerofferVO where offerdeletestatus ='active' ");
 		 ls=q.list();
 		 return ls;
 		

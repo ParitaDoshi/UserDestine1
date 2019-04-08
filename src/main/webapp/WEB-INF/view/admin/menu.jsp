@@ -17,8 +17,8 @@
 				class="fa fa-home menu-icon"></i> <span class="menu-title">DashBoard</span>
 		</a></li>
 
-		
-		
+
+
 		<li class="nav-item"><a class="nav-link" data-toggle="collapse"
 			href="#page-layouts" aria-expanded="false"
 			aria-controls="page-layouts"> <i class="fab fa-trello menu-icon"></i>
@@ -36,12 +36,12 @@
 			</div></li>
 
 		<li class="nav-item d-none d-lg-block"><a class="nav-link"
-			data-toggle="collapse" href="#sidebar-layouts" aria-expanded="false"
-			aria-controls="sidebar-layouts"> <i
+			data-toggle="collapse" href="#subCat" aria-expanded="false"
+			aria-controls="subCat"> <i
 				class="fas fa-columns menu-icon"></i> <span class="menu-title">Manage
 					SubCategory</span> <i class="menu-arrow"></i>
 		</a>
-			<div class="collapse" id="sidebar-layouts">
+			<div class="collapse" id="subCat">
 				<ul class="nav flex-column sub-menu">
 
 
@@ -52,42 +52,23 @@
 
 				</ul>
 			</div></li>
-			
-			<li class="nav-item"><a class="nav-link" data-toggle="collapse"
-			href="#charts" aria-expanded="false" aria-controls="charts"> <i
-				class="fas fa-chart-pie menu-icon"></i> <span class="menu-title">Manage
+
+		<li class="nav-item"><a class="nav-link" data-toggle="collapse"
+			href="#restaurant" aria-expanded="false" aria-controls="restaurant">
+				<i class="fas fa-chart-pie menu-icon"></i> <span class="menu-title">Manage
 					Restaurant</span> <i class="menu-arrow"></i>
 		</a>
-			<div class="collapse" id="charts">
+			<div class="collapse" id="restaurant">
 				<ul class="nav flex-column sub-menu">
-				<li class="nav-item d-none d-lg-block"><a class="nav-link"
+					<li class="nav-item d-none d-lg-block"><a class="nav-link"
 						href="shoppage">Add Restaurant</a></li>
 					<li class="nav-item"><a class="nav-link" href="viewshoppage">View
 							Restaurant</a></li>
-
 				</ul>
 			</div></li>
-			
-<!-- 
-		<li class="nav-item d-none d-lg-block"><a class="nav-link"
-			data-toggle="collapse1" href="#sidebar-layouts" aria-expanded="false"
-			aria-controls="sidebar-layouts1"> <i
-				class="fas fa-compass menu-icon"></i> <span class="menu-title">Manage
-					Shop</span> <i class="menu-arrow"></i>
-		</a>
-			<div class="collapse" id="sidebar-layouts">
-				<ul class="nav flex-column sub-menu">
 
-					<li class="nav-item d-none d-lg-block"><a class="nav-link"
-						href="shoppage">Add Shop</a></li>
-					<li class="nav-item"><a class="nav-link" href="viewshoppage">View
-							Shop</a></li>
-							
-					</ul>
-				</div>
-			</li>
- -->
-	
+
+
 		<li class="nav-item"><a class="nav-link" data-toggle="collapse"
 			href="#ui-advanced" aria-expanded="false" aria-controls="ui-advanced">
 				<i class="fas fa-clipboard-list menu-icon"></i> <span
@@ -102,8 +83,8 @@
 
 				</ul>
 			</div></li>
-			
-			
+
+
 		<li class="nav-item"><a class="nav-link" data-toggle="collapse"
 			href="#form-elements" aria-expanded="false"
 			aria-controls="form-elements"> <i
@@ -150,20 +131,19 @@
 
 
 		<li class="nav-item"><a class="nav-link" data-toggle="collapse"
-			href="#charts" aria-expanded="false" aria-controls="charts"> <i
-				class="fas fa-chart-pie menu-icon"></i> <span class="menu-title">Manage
+			href="#feedbaxcks" aria-expanded="false" aria-controls="feedbaxcks"> <i
+				class="fas fa-pen-square menu-icon"></i> <span class="menu-title">Manage
 					Feedback</span> <i class="menu-arrow"></i>
 		</a>
-			<div class="collapse" id="charts">
+			<div class="collapse" id="feedbaxcks">
 				<ul class="nav flex-column sub-menu">
+
 					<li class="nav-item"><a class="nav-link"
 						href="viewfeedbackadmin">View Feedback</a></li>
-
 				</ul>
 			</div></li>
-			
-			
-	<li class="nav-item"><a class="nav-link" href="../logout"><span class="menu-title"  class="btn btn-primary">Logout</span>
-		</a></li>
-		
+
+
+		<li class="nav-item"><a class="nav-link" href="../logout"><span
+				class="menu-title" class="btn btn-primary">Logout</span> </a></li>
 </nav>

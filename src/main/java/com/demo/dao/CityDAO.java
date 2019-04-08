@@ -30,7 +30,7 @@ public class CityDAO implements CityInterface {
 		 List ls=new ArrayList();
 		 
 		 Session session = this.sessionFactory.getCurrentSession();
-		 Query q=session.createQuery("from CityVO");
+		 Query q=session.createQuery("from CityVO where citydeletestatus='active' ");
 		 ls=q.list();
 		 return ls;
 	}

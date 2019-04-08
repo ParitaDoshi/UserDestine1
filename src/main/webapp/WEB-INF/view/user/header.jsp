@@ -15,45 +15,38 @@
                                         <ul>
                                             <li><a href="index">Home</a>
                                                <ul>
-                                       		
-                                                    
-                                               </ul>
+                                       		   </ul>
                                             </li>
-                                            <li><a href="aboutpage">About</a></li>
-                                              <li><a href="restaurantpage">Restaurant</a></li>
-                                          <!--   <li class="active"><a href="menupage">Menu</a></li> -->
-                                            <li><a href="userofferypage">Offer</a></li>
-                                          <!--   <li><a href="blog.html">Blog</a>
-                                                <ul>
-                                                    <li><a href="blog-details-left-sidebar.html">Blog Left Sidebar</a></li>
-                                                    <li><a href="blog-details-right-sidebar.html">Blog Right Sidebar</a></li>
-                                                </ul>
-                                            </li> -->
-                                           <!--  <li><a href="#">Pages</a>
-                                                <ul>
-                                                    <li><a href="about.html">About Page</a></li>
-                                                    <li><a href="menu.html">Menu Page</a></li>
-                                                    <li><a href="gallery.html">Gallery Page</a></li>
-                                                    <li><a href="blog.html">Blog Page</a>
-                                                    <li><a href="blog-details-left-sidebar.html">Blog Left Sidebar</a></li>
-                                                    <li><a href="blog-details-right-sidebar.html">Blog Right Sidebar</a></li>
-                                                    <li><a href="contact.html">Contact Page</a></li>
-                                                </ul>
-                                            </li> -->
-                                            <li><a href="contactpage">Contact</a>
-                                           
                                             
-                                            </li>
-                                              <li><a href="complainpage">Complain</a>
-                                               <ul>
                                             <li>
-                                            <a href="viewcomplain">View Complain</a>
+                                            	<a href="aboutpage">About</a>
                                             </li>
-                                            
-                                            </ul>
-                                              
+                                            <li>
+                                            	<a href="restaurantpage">Restaurant</a>
+                                            </li>
+                                          
+                                            <li>
+                                            	<a href="userofferypage">Offer</a>
+                                            </li>
+                                            <li>
+                                            	<a href="contactpage">Contact</a>
+                                            </li>
+                                            <li>
+                                            	<a href="#">Complain</a>
+                                               	<ul>
+		                                            <li>
+        		                                    	<a href="complainpage">Add Complain</a>
+                        		                    </li>
+                                	            </ul>
+                                             </li>
+                                            <li><a href="#">Feedback</a>
+                                               	<ul>
+		                                            <li>
+        		                                    	<a href="feedbackpage">Add Feedback</a>
+                		                            	<a href="viewFeedbackUser">View Feedback</a>
+                        		                    </li>
+                                	            </ul>
                                               </li>
-                                                <li><a href="feedbackpage">Feedback</a></li>
                                                 <li><a href="../logout">Logout</a></li> 
                                         </ul>
                                     </nav>

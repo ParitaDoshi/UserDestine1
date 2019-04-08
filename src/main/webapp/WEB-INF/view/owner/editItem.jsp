@@ -273,7 +273,7 @@
                       
                        <div class="form-group">
                         <label for="Item Size">Item Size</label>
-                        <f:input path="itemsize" class="form-control"required="required"></f:input>
+                        <f:input path="itemsize" class="form-control" required="required"></f:input>
                       </div>
                       
                        <div class="col-lg-6 grid-margin stretch-card">

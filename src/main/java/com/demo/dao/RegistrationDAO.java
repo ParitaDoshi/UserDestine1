@@ -65,7 +65,7 @@ public class RegistrationDAO implements RegistrationInterface{
 		List ls=new ArrayList();
 		 
 		 Session session = this.sessionFactory.getCurrentSession();
-		 Query q=session.createQuery("from RegistrationVO");
+		 Query q=session.createQuery("from RegistrationVO where shopdeletestatus='active'");
 		 ls=q.list();
 		 return ls;
 	}

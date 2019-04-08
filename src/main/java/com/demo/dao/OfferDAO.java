@@ -31,7 +31,7 @@ public class OfferDAO implements OfferInterface{
 		List ls=new ArrayList();
 		 
 		 Session session = this.sessionFactory.getCurrentSession();
-		 Query q=session.createQuery("from OfferVO");
+		 Query q=session.createQuery("from OfferVO where offerdeletestatus ='active'");
 		 ls=q.list();
 		 return ls;
 	}

@@ -28,7 +28,7 @@ public class FeedbackDAO implements FeedbackInterface {
 		List ls=new ArrayList();
 		 
 		 Session session = this.sessionFactory.getCurrentSession();
-		 Query q=session.createQuery("from FeedbackVO");
+		 Query q=session.createQuery("from FeedbackVO where feedbackdeletestatus ='active' ");
 		 ls=q.list();
 		 return ls;
 		

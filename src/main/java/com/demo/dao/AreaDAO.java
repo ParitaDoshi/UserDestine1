@@ -31,7 +31,7 @@ public class AreaDAO implements AreaInterface{
 		List ls=new ArrayList();
 		 
 		 Session session = this.sessionFactory.getCurrentSession();
-		 Query q=session.createQuery("from AreaVO");
+		 Query q=session.createQuery("from AreaVO where areadeletestatus ='active'");
 		 ls=q.list();
 		 return ls;
 	}

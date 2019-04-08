@@ -28,7 +28,7 @@ public class ComplainDAO implements ComplainInterface {
 		List ls=new ArrayList();
 		 
 		 Session session = this.sessionFactory.getCurrentSession();
-		 Query q=session.createQuery("from ComplainVO");
+		 Query q=session.createQuery("from ComplainVO where complaindeletestatus ='active'");
 		 ls=q.list();
 		 return ls;
 	}
@@ -70,9 +70,9 @@ public class ComplainDAO implements ComplainInterface {
 
 	@Override
 	public List allcomplainview(ComplainVO complainVO) {
-		String status="Replyed";
+		String status = "Replyed";
 		Session session=sessionFactory.getCurrentSession();
-		Query q=session.createQuery("from ComplainVO where toId ='"+complainVO.getToId().getLoginid()+"' and complainReplyStatus='"+status+"'");
+		Query q=session.createQuery("from ComplainVO where fromId ='"+complainVO.getToId().getLoginid()+"' and complainReplyStatus='"+status+"'");
 		List ls=q.list();
 		return ls;
 	}
